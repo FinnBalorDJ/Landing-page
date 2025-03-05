@@ -25,7 +25,7 @@
         <a href="#" class="company-logo">
           <img src="assets/asset 1.png" alt="company logo" />
         </a>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <ul class="flex">
             <li><a href="#" class="hover-link">Products</a></li>
             <li><a href="#" class="hover-link">Customer</a></li>
@@ -35,13 +35,13 @@
             <li><a href="#" class="hover-link primary-button">Sign up</a></li>
           </ul>
         </div>
-         <a href="#" class="nav-toggle hover-link">
+         <a href="#" class="nav-toggle hover-link" id="nav-toggle">
           <i class="fa-solid fa-bars"></i>
          </a>
       </div>
     </nav>
 
-    <!-- header section-->>
+    <!-- header section-->
     <header>
       <div class="container header-section flex">
         <div class="header-left">
@@ -58,7 +58,7 @@
       </div>
     </header>
 
-    <!-- companies section-->>
+    <!-- companies section-->
 
     <section class="companies-section">
       <div class="container">
@@ -87,8 +87,7 @@
             Your user research Swiss Army knife
           </h2>
           <a href="#" class="secondary-button"
-            >See all features <img src="assets/asset 12.svg" alt=""
-          /></a>
+            >See all features <i class="fa-solid fa-right-long"></i></a>
         </div>
         <div class="features-area flex">
           <div class="features-card flex">
@@ -293,5 +292,15 @@
 
     <!-- <div class="space" style="height: 100vw"></div> -->
     <script src="https://kit.fontawesome.com/fe3424ea76.js" crossorigin="anonymous"></script>
-  </body>
+  
+     <script>
+         const toggleButton = document.getElementById('nav-toggle');
+         const navLinks = document.getElementById('nav-links');
+
+         toggleButton.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+         }) 
+     </script>
+  
+ </body>
 </html>
