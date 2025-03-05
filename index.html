@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- top banner-->
@@ -33,6 +35,9 @@
             <li><a href="#" class="hover-link primary-button">Sign up</a></li>
           </ul>
         </div>
+         <a href="#" class="nav-toggle hover-link">
+          <i class="fa-solid fa-bars"></i>
+         </a>
       </div>
     </nav>
 
@@ -163,9 +168,7 @@
 
     <section class="big-feature-section">
       <div
-        class="container flex big-feature-container"
-        style="flex-direction: row-reverse"
-      >
+        class="container flex big-feature-container" id="second-big-feature">
         <div class="feature-img">
           <img src="assets/asset 21.png" alt="" />
         </div>
@@ -208,7 +211,7 @@
             >See more examples <img src="assets/asset 12.svg" alt=""
           /></a>
         </div>
-        <div class="example-area flex">
+        <div class="examples-area flex">
           <a href="#" class="examples-card">
             <h3 class="card-text">
               Can users complete a task in my software interface?
